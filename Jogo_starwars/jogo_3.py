@@ -61,7 +61,6 @@ def game():
 
     def draw_enemies(enemy_list):
         for enemy_pos in enemy_list:
-            # pygame.draw.rect(screen, GREEN,(enemy_pos[0], enemy_pos[1], enemy_size, enemy_size))
             screen.blit(enemy_skin, enemy_pos)
 
 
@@ -146,8 +145,7 @@ def game():
             
 
         draw_enemies(enemy_list)
-
-        # pygame.draw.rect(screen, RED,(player_pos[0], player_pos[1], player_size, player_size))    
+        
         screen.blit(player_skin, player_pos)
         fps.tick(60)
 
